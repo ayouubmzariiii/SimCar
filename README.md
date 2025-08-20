@@ -1,56 +1,53 @@
 # 🚗 SimCar - Vehicle Fleet Management Dashboard
 
-A modern, responsive web application designed for comprehensive vehicle fleet management and analytics. Built with React, Material-UI, and Vite for optimal performance and user experience.
+A simple, responsive React dashboard application for vehicle fleet management. Built with React, Material-UI, and Vite.
 
 ## 🌟 Features
 
-### 📊 **Real-time Dashboard**
-- **Live Metrics**: Track 1,247+ vehicles, 8,934+ active users, and $125K+ monthly revenue
-- **Interactive Charts**: Revenue trends, vehicle status distribution, and performance analytics
-- **Activity Feed**: Real-time updates on vehicle additions, maintenance schedules, and system alerts
+### 📊 **Dashboard**
+- **Metrics Display**: Shows mock data for vehicles, users, revenue, and efficiency
+- **Charts**: Revenue trends, vehicle status distribution, and user activity charts
+- **Activity Feed**: List of recent activities and notifications
 
 ### 🚛 **Fleet Management**
-- **Vehicle Inventory**: Complete database with specifications, efficiency ratings, and service history
-- **Status Tracking**: Monitor Active, Maintenance, Idle, and Out-of-Service vehicles
-- **Performance Monitoring**: Track fuel efficiency (94.2% fleet average) and mileage across the fleet
-- **Maintenance Scheduling**: Automated alerts and service tracking
+- **Vehicle List**: View vehicles with basic information (name, type, efficiency, status)
+- **Vehicle Status**: Display Active, Maintenance, Idle, and Out-of-Service vehicles
+- **Basic Vehicle Data**: Mock data for demonstration purposes
 
 ### 👥 **User Management**
-- **Role-based Access**: Secure authentication with role-based permissions
-- **User Analytics**: Track user engagement and system usage
-- **Profile Management**: Comprehensive user profiles with customizable settings
+- **Authentication**: Simple login/logout functionality
+- **User List**: View users with roles and status
+- **Profile Management**: Basic user profile editing
 
-### 📈 **Advanced Analytics**
-- **Revenue Analysis**: Monthly revenue tracking with 18.7% growth trends
-- **Performance Metrics**: Fleet efficiency, maintenance costs, uptime monitoring
-- **Custom Reports**: Generate detailed reports for stakeholders
-- **Predictive Analytics**: Forecast maintenance needs and optimize operations
+### 📈 **Analytics**
+- **Charts**: Revenue/expense trends and fleet status distribution
+- **Mock Data Visualization**: Charts powered by Chart.js and MUI X Charts
 
-### ⚙️ **System Administration**
-- **Settings & Configuration**: Dark/light theme support, notification preferences
-- **Security**: Secure authentication with persistent sessions
-- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
+### ⚙️ **System Features**
+- **Theme Support**: Dark/light mode toggle
+- **Responsive Design**: Works on desktop, tablet, and mobile
+- **Navigation**: Sidebar navigation with routing
 
 ## 🛠️ Technology Stack
 
-- **Frontend**: React 18 with Vite for lightning-fast development
-- **UI Framework**: Material-UI (MUI) for consistent, modern design
-- **State Management**: React Context API for authentication and theme management
-- **Charts**: Custom chart components for data visualization
-- **Routing**: React Router for seamless navigation
-- **Build Tool**: Vite for optimized builds and hot module replacement
+- **Frontend**: React 19 with Vite
+- **UI Framework**: Material-UI (MUI) v7
+- **State Management**: React Context API for authentication and theme
+- **Charts**: Chart.js with react-chartjs-2 and MUI X Charts
+- **Routing**: React Router DOM v7
+- **Build Tool**: Vite v7
 
 ## 🚀 Quick Start
 
 ### Prerequisites
-- Node.js 20.19+ or 22.12+ (recommended)
-- npm or yarn package manager
+- Node.js (latest LTS version recommended)
+- npm package manager
 
 ### Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/SimCar.git
+git clone https://github.com/ayouubmzariiii/SimCar.git
 cd SimCar
 
 # Install dependencies
@@ -64,86 +61,40 @@ npm run build
 ```
 
 ### Development Server
-- Local: http://localhost:5174
-- Network: Available on your local network for mobile testing
+- Local: http://localhost:5173 (default Vite port)
+- The app will open in your default browser
 
 ## 📱 Responsive Design
 
-The application is fully responsive with:
-- **Desktop**: Full sidebar navigation with detailed views
-- **Tablet**: Collapsible sidebar with touch-friendly interfaces
-- **Mobile**: Optimized layouts with bottom navigation
+The application is responsive and works on:
+- **Desktop**: Full sidebar navigation
+- **Tablet**: Collapsible sidebar
+- **Mobile**: Mobile-optimized layout
 
-## 🔧 Configuration
+## 🔧 Features
 
-### Environment Variables
-Create a `.env` file in the root directory:
+- **Theme**: Toggle between light and dark modes in the header
+- **Authentication**: Simple login with mock credentials
+- **Navigation**: Sidebar navigation between different pages
 
-```bash
-VITE_API_URL=your_api_endpoint
-VITE_AUTH_SECRET=your_secret_key
-```
+## 📊 Data
 
-### Customization
-- **Theme**: Toggle between light and dark modes
-- **Notifications**: Configure alert preferences
-- **Dashboard**: Customize widget layouts and data views
+The application uses mock data for demonstration:
+- **Vehicle data**: Sample vehicles with basic information
+- **User data**: Mock users with different roles
+- **Chart data**: Sample revenue, expense, and activity data
+- **Dashboard metrics**: Static demo metrics
 
-## 📊 Data Management
-
-### Mock Data
-The application includes comprehensive mock data for:
-- **1,247 vehicles** with detailed specifications
-- **8,934 users** with role-based access
-- **12 months** of revenue and expense data
-- **Real-time activity** tracking and alerts
-
-### API Integration Ready
-Built with API integration in mind:
-- RESTful API endpoints structure
-- Authentication token management
-- Error handling and loading states
-- Data caching strategies
-
-## 🎯 Key Performance Indicators
-
-| Metric | Current | Target |
-|--------|---------|---------|
-| Fleet Efficiency | 94.2% | 95.0% |
-| System Uptime | 98.7% | 99.0% |
-| Customer Satisfaction | 4.6/5 | 4.8/5 |
-| Monthly Revenue Growth | 18.7% | 20.0% |
-
-## 🔒 Security Features
-
-- **JWT Authentication**: Secure token-based authentication
-- **Role-based Access Control**: Granular permissions system
-- **Data Encryption**: Sensitive data protection
-- **Session Management**: Automatic logout and refresh tokens
+All data is stored in `src/data/mockData.js` and is not persistent.
 
 ## 🌐 Browser Support
 
-- **Chrome**: 90+
-- **Firefox**: 88+
-- **Safari**: 14+
-- **Edge**: 90+
-
-## 📋 Roadmap
-
-- [ ] **Real-time GPS tracking** integration
-- [ ] **Predictive maintenance** algorithms
-- [ ] **Mobile app** development
-- [ ] **Advanced reporting** with export capabilities
-- [ ] **Integration** with popular fleet management APIs
-
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+Works on modern browsers that support ES6+ features.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
 ---
 
-**Built with ❤️ for modern fleet management**
+**A simple React dashboard demo**
